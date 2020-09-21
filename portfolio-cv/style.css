@@ -10,7 +10,8 @@ matorangered: #ff7f5c
   margin: 0;
   padding: 0; }
 
-html, body {
+body,
+html {
   background: #565a97;
   scroll-behavior: smooth;
   /* Virker ikke for Safari */
@@ -18,7 +19,6 @@ html, body {
 
 header {
   background-color: transparent;
-  display: inline-block;
   width: 100%;
   position: fixed;
   z-index: 100; }
@@ -88,6 +88,9 @@ nav {
   text-decoration: none;
   color: #72cec1; }
 
+#hjem {
+  z-index: 1; }
+
 .front-photo {
   position: relative;
   text-align: center;
@@ -114,11 +117,23 @@ h1 {
   font-size: 26px; }
 
 /* Billedet bag h1 */
-.migselv-black {
+.migselv-open {
   bottom: 0;
+  top: 7%;
   left: 0;
-  margin-left: 30%;
-  width: 38%; }
+  margin-left: 48%;
+  width: 33%;
+  z-index: 3;
+  position: absolute; }
+
+.migselv-open2 {
+  bottom: 0;
+  top: 14%;
+  left: 0;
+  margin-top: 7.1vh;
+  margin-left: 33%;
+  width: 33%;
+  z-index: 2; }
 
 /* Ændre i alle section elementer */
 section {
@@ -142,7 +157,7 @@ h2 {
 .ned {
   position: absolute;
   left: 49%;
-  bottom: 0px;
+  bottom: 0;
   margin-bottom: 10vh; }
 
 /* Ændre i om mig */
@@ -151,10 +166,10 @@ h2 {
   background: #ff7f5c;
   position: relative; }
 
-.migselv {
+.portfolio {
   width: 40%;
   margin-left: 5vw;
-  margin-top: 15vh;
+  margin-top: 6vh;
   float: left; }
 
 .om {
@@ -175,13 +190,10 @@ h2 {
 p {
   font-weight: 200; }
 
-#kompetencer {
+#teo-viden {
   height: 826px;
   background-color: #565a97;
   position: relative; }
-
-h6 {
-  font-size: 20px; }
 
 /* The actual timeline (the vertical ruler) */
 .timeline {
@@ -278,6 +290,54 @@ h6 {
   -moz-box-shadow: 10px 10px 6px -6px rgba(0, 0, 0, 0.5);
   box-shadow: 10px 10px 6px -6px rgba(0, 0, 0, 0.5); }
 
+/* Container around content */
+.container_job {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 100%; }
+
+/* The circles on the timeline */
+.container_job::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: #FDF3EF;
+  border: 4px solid #565a97;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1; }
+
+/* Styr boksene under projekter */
+.text {
+  padding: 5px;
+  background-color: #ffd491;
+  border-radius: 5px; }
+
+.text:hover {
+  padding: 5px;
+  background-color: #fdf3e5;
+  border-radius: 5px; }
+
+h6 {
+  font-size: 20px; }
+
+#erhver-viden {
+  background-color: #ff7f5c;
+  position: relative;
+  height: 701px; }
+
+#kompetencer {
+  height: 826px;
+  background-color: #565a97;
+  position: relative; }
+
+.programs {
+  font-weight: bold;
+  font-size: 18px; }
+
 .flex-komp {
   display: flex;
   flex-direction: row;
@@ -301,29 +361,9 @@ svg {
 /* Ændre i projekter */
 #projekt {
   background-color: #ff7f5c;
-  position: relative; }
-
-/* Container around content */
-.container_job {
-  padding: 10px 40px;
   position: relative;
-  background-color: inherit;
-  width: 100%; }
+  height: 682px; }
 
-/* The circles on the timeline */
-.container_job::after {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  background-color: #FDF3EF;
-  border: 4px solid #565a97;
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1; }
-
-/* Styr boksene under projekter */
 .container2 {
   display: flex;
   flex-direction: row;
@@ -347,43 +387,23 @@ svg {
   align-items: center;
   justify-content: center; }
 
-.text {
-  padding: 5px;
-  background-color: #ffd491;
-  border-radius: 5px; }
-
-.text:hover {
-  padding: 5px;
-  background-color: #fdf3e5;
-  border-radius: 5px; }
-
 .projekt1 {
-  background-image: url(/eksamen-projekt/billeder/projekt1.png);
+  background-image: url("#");
   background-repeat: no-repeat;
   background-size: cover; }
 
-.html-css {
-  background-image: url(/eksamen-projekt/billeder/htmlopgave.png);
+.odense-glas {
+  background-image: url("#");
   background-repeat: no-repeat;
   background-size: cover; }
 
-.typografi {
-  background-image: url(/eksamen-projekt/billeder/typografi.png);
+.matas {
+  background-image: url("#");
   background-repeat: no-repeat;
   background-size: cover; }
 
-.css-ani {
-  background-image: url(/eksamen-projekt/billeder/ahd-css-link.png);
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.portrait {
-  background-image: url(/eksamen-projekt/billeder/portrait.png);
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.app-date {
-  background-image: url(/eksamen-projekt/billeder/app-date.png);
+.robot {
+  background-image: url("#");
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -392,7 +412,9 @@ svg {
   background: #565a97;
   /* linear-gradient(110deg, #565a97 78%, #ffd491 30%); */
   padding-bottom: 19px;
-  position: relative; }
+  position: relative;
+  height: 74%;
+  z-index: -2; }
 
 /* Billedet under konatakt */
 .migselv2 {
@@ -400,6 +422,13 @@ svg {
   margin-left: 72vw;
   position: absolute;
   bottom: 0; }
+
+.migselv3 {
+  width: 25%;
+  margin-left: 73vw;
+  position: absolute;
+  bottom: 0;
+  z-index: -1; }
 
 .mail-kon {
   width: 25%;
@@ -468,8 +497,21 @@ svg {
   text-decoration: none;
   color: #fff; }
 
+.some {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin-top: 50px; }
+
+.some img {
+  width: 30%; }
+
+.some a {
+  display: block; }
+
 .copyright {
-  margin-top: 5vh;
+  margin-top: 2vh;
   background-color: #ff7f5c; }
 
 /* Gør hjem responsiv når man går ned til 600px */
