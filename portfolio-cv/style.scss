@@ -1,11 +1,5 @@
-/* COLORS
-babyblue: #72cec1
-whitegrey: #fdf3e5
-purpleblue: #565a97
-mustardyellow: #ffd491
-matorangered: #ff7f5c
-*/
 @import "reset.scss";
+
 $pricolor: #565a97;
 $seccolor: #ff7f5c;
 $thicolor: #ffd491;
@@ -352,20 +346,7 @@ p {
   border-radius: 50%;
   z-index: 1;
 }
-/* Styr boksene under projekter */
 
-
-.text {
-  padding: 5px;
-  background-color: #ffd491;
-  border-radius: 5px;
-}
-
-.text:hover {
-  padding: 5px;
-  background-color: #fdf3e5;
-  border-radius: 5px;
-}
 
 h6 {
   font-size: 20px;
@@ -425,49 +406,77 @@ svg {
   border-radius: 10px;
 }
 
-.container2 > a {
-  background-color: #72cec1;
-  text-align: center;
-  text-decoration: none;
-  width: 50%;
-  margin-left: 50px;
-  margin-right: 50px;
-  height: 200px;
-  color: black;
-  font-weight: bold;
-  font-size: 30px;
-  border-radius: 10px;
+.modal{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  z-index: 10;
+  background-color: $thicolor;
+  width: 500px;
+  max-width: 80%;
+}
+
+.modal.active{
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header{
+  padding: 10px 15px;
   display: flex;
-  white-space: normal;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
 }
 
-.projekt1 {
-  background-image: url("#");
-  background-repeat: no-repeat;
-  background-size: cover;
+.modal-header .close{
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
-.odense-glas {
-  background-image: url("#");
-  background-repeat: no-repeat;
-  background-size: cover;
+.modal-header .projekt-tit{
+  font-weight: bold;
 }
 
-.matas {
-  background-image: url("#");
-  background-repeat: no-repeat;
-  background-size: cover;
+.knap-projekt{
+  font-size: 26px;
+  margin-top: 100px;
+  margin-left: 6.5%;
+  margin-right: 0%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  border-radius: 10px;
+  background: none;
+  outline: none;
+  border: none;
+  background-color: $thicolor;
 }
 
-.robot {
-  background-image: url("#");
-  background-repeat: no-repeat;
-  background-size: cover;
+.knap-projekt:hover{
+  background-color: $fifcolor;
 }
 
+/*
+#overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
 
+#overlay.active{
+  opacity: 1;
+  pointer-events: all;
+}
+*/
 /* Andre i kontakt */
 #kontakt {
   background: #565a97;
@@ -560,15 +569,27 @@ svg {
   list-style: none;
 }
 
+.menuer a:hover{
+  color: $thicolor;
+}
+
 .footer-projekter {
   margin-top: 2vh;
   text-align: left;
   list-style: none;
 }
 
+.footer-projekter a:hover{
+  color: $thicolor;
+}
+
 .mail {
   text-decoration: none;
   color: #fff;
+}
+
+.mail:hover{
+  color: $thicolor;
 }
 
 .some{
@@ -585,6 +606,22 @@ svg {
 
 .some a{
   display: block;
+}
+
+.linkedin:hover {
+  filter: opacity(50%);
+}
+
+.twitter:hover {
+  filter: opacity(50%);
+}
+
+.face:hover {
+  filter: opacity(50%);
+}
+
+.insta:hover {
+  filter: opacity(50%);
 }
 
 

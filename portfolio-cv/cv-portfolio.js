@@ -1,57 +1,37 @@
-// henter knappen der åbner modal
-var btn = document.querySelectorAll("button.modal-button");
+const openModalbuttons = document.querySelectorAll('[data-modal-target]')
+const closeModalbutton = document.querySelectorAll('[data-close-button]')
+const overlay = document.getElementById('overlay')
 
-// Alle sider moddals
-var modals = document.querySelectorAll('.modal');
-
-// Henter <span> element der lukker modal.
-var spans = document.getElementsByClassName("close");
-
-// Når brugeren klikker på button åbner modal
-for (var i = 0; i < btn.length; i++) {
- btn[i].onclick = function(e) {
-    e.preventDefault();
-    modal = document.querySelector(e.target.getAttribute("data-href"));
-    modal.style.display = "block";
- }
-}
-
-// Når brugeren klikker på <span> (x), lukker modal
-for (var i = 0; i < spans.length; i++) {
- spans[i].onclick = function() {
-    for (var index in modals) {
-      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
-    }
- }
-}
-
-// Når brugeren klikker alle andre steder lukker modal
-window.onclick = function(event) {
-    if (event.target.classList.contains('modal')) {
-     for (var index in modals) {
-      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
-     }
-    }
-}
-
-var modal = document.getElementById("mitVindue");
-
-
-var btn = document.getElementById("minKnap");
-
-
-var span = document.getElementsByClassName("luk")[0];
-
-
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-span.onclick = function() {
-  modal.style.display = "none";
-}
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+openModalbuttons.forEach(div => {
+  button.addEventListener('click', () => {
+    const modal = document.querySelector(button.dataset.modalTarget)
+    openModal(modal)
   }
+});
+
+overlay.addEventListener('click', () => {
+  const modals = document.querySelectorAll('.modal.active')
+  modals.forEach(modal => {
+    closeModal(modal)
+  });
+
+}
+
+closeModalbutton.forEach(div => {
+  button.addEventListener('click', () => {
+    const modal = button.closeset('.modal')
+    openModal(modal)
+  }
+});
+
+function openModal(modal) {
+  if (modal == null) return
+  modal.classList.add('active')
+  overlay.classList.add('active')
+}
+
+function closeModal(modal) {
+  if (modal == null) return
+  modal.classList.remove('active')
+  overlay.classList.remove('active')
 }
