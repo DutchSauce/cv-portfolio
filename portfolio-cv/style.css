@@ -112,7 +112,7 @@ h1 {
 /* Billedet bag h1 */
 .migselv-open {
   bottom: 0;
-  top: 7%;
+  top: 11.5%;
   left: 0;
   margin-left: 48%;
   width: 33%;
@@ -123,8 +123,8 @@ h1 {
   bottom: 0;
   top: 14%;
   left: 0;
-  margin-top: 7.1vh;
-  margin-left: 33%;
+  margin-top: 11.6vh;
+  margin-left: 32%;
   width: 33%;
   z-index: 2; }
 
@@ -162,17 +162,17 @@ h2 {
 .portfolio {
   width: 40%;
   margin-left: 5vw;
-  margin-top: 6vh;
+  margin-top: 11vh;
   float: left; }
 
 .om {
   font-size: 20px;
+  font-weight: 200;
   line-height: 3.5vh;
   color: #000000;
   margin-top: 10vh;
   margin-left: 50vw;
   margin-right: 10vw;
-  font-weight: 200;
   background-color: #ffd491;
   padding: 40px;
   border-radius: 10px;
@@ -346,76 +346,113 @@ svg {
   position: relative;
   height: 682px; }
 
-.container2 {
-  display: flex;
-  flex-direction: row;
-  margin-top: 15vh;
-  border-radius: 10px; }
-
-.modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  transition: 200ms ease-in-out;
-  z-index: 10;
+#myBtn {
   background-color: #ffd491;
-  width: 500px;
-  max-width: 80%; }
-
-.modal.active {
-  transform: translate(-50%, -50%) scale(1); }
-
-.modal-header {
-  padding: 10px 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-
-.modal-header .close {
-  cursor: pointer;
-  border: none;
-  outline: none;
-  background: none;
-  font-size: 1.25rem;
-  font-weight: bold; }
-
-.modal-header .projekt-tit {
-  font-weight: bold; }
-
-.knap-projekt {
-  font-size: 26px;
-  margin-top: 100px;
-  margin-left: 6.5%;
-  margin-right: 0%;
-  justify-content: space-between;
-  align-items: center;
-  padding: 50px;
+  text-align: center;
+  text-decoration: none;
+  width: 20%;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 100px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
   border-radius: 10px;
-  background: none;
-  outline: none;
-  border: none;
-  background-color: #ffd491; }
+  display: flex;
+  white-space: normal;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  outline: 0;
+  cursor: pointer; }
 
-.knap-projekt:hover {
+#mtBtn:hover {
   background-color: #72cec1; }
 
-/*
-#overlay{
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
   position: fixed;
-  top: 0;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
   left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, .5);
-  pointer-events: none;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  -webkit-animation-name: fadeIn;
+  /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s; }
+
+/* Modal Content */
+.modal-content {
+  position: fixed;
+  margin-top: 10.5%;
+  margin-left: 10.5%;
+  background-color: #ffd491;
+  width: 80%;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s; }
+
+/* The Close Button */
+.close {
+  color: #000000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold; }
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer; }
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #ffd491;
+  color: #000000; }
+
+.modal-body {
+  padding: 2px 16px; }
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #ffd491;
+  color: #000000; }
+
+/* Add Animation */
+/*@-webkit-keyframes slideIn {
+  from {bottom: -300px; opacity: 0}
+  to {bottom: 0; opacity: 1}
 }
 
-#overlay.active{
-  opacity: 1;
-  pointer-events: all;
-}
-*/
+@keyframes slideIn {
+  from {bottom: -300px; opacity: 0}
+  to {bottom: 0; opacity: 1}
+}*/
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 /* Andre i kontakt */
 #kontakt {
   background: #565a97;
@@ -466,7 +503,7 @@ svg {
 /* Styrere footerens bredde og baggrund */
 #footer {
   width: 100%;
-  height: 27vh;
+  height: 26vh;
   background-color: #ff7f5c;
   color: white;
   text-align: center;
@@ -520,12 +557,25 @@ svg {
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  margin-top: 50px; }
+  margin-top: 5vh; }
 
 .some img {
-  width: 30%; }
+  width: 50%; }
 
 .some a {
+  display: block; }
+
+.some2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2vh; }
+
+.some2 img {
+  width: 30%; }
+
+.some2 a {
   display: block; }
 
 .linkedin:hover {
