@@ -112,7 +112,7 @@ h1 {
 /* Billedet bag h1 */
 .migselv-open {
   bottom: 0;
-  top: 11.5%;
+  top: 6.4%;
   left: 0;
   margin-left: 48%;
   width: 33%;
@@ -123,7 +123,7 @@ h1 {
   bottom: 0;
   top: 14%;
   left: 0;
-  margin-top: 11.6vh;
+  margin-top: 6.5vh;
   margin-left: 32%;
   width: 33%;
   z-index: 2; }
@@ -183,6 +183,7 @@ h2 {
 p {
   font-weight: 200; }
 
+/* CV */
 #teo-viden {
   height: 826px;
   background-color: #565a97;
@@ -564,6 +565,9 @@ svg {
 
 .some a {
   display: block; }
+
+.atmail:hover {
+  filter: opacity(50%); }
 
 .some2 {
   display: flex;
