@@ -1,5 +1,4 @@
 @import "reset.scss";
-
 $pricolor: #565a97;
 $seccolor: #ff7f5c;
 $thicolor: #ffd491;
@@ -96,7 +95,7 @@ nav {
   color: #72cec1;
 }
 
-#hjem{
+#hjem {
   z-index: 1;
 }
 
@@ -148,7 +147,6 @@ h1 {
   width: 33%;
   z-index: 2;
 }
-
 /* Ændre i alle section elementer */
 
 section {
@@ -212,9 +210,9 @@ h2 {
 p {
   font-weight: 200;
 }
-
 /* CV */
- #teo-viden {
+
+#teo-viden {
   height: 826px;
   background-color: #565a97;
   position: relative;
@@ -348,7 +346,6 @@ p {
   z-index: 1;
 }
 
-
 h6 {
   font-size: 20px;
 }
@@ -395,19 +392,22 @@ svg {
 /* Ændre i projekter */
 
 #projekt {
-  background-color: #ff7f5c;
+  background: $seccolor;
   position: relative;
   height: 682px;
 }
 
-.flex-projekter{
+.flex-projekter {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 25vh;
 }
 
-#myBtn, #myBtnO, #myBtnR, #myBtnM{
+#myBtn,
+#myBtnM,
+#myBtnO,
+#myBtnR {
   background-color: $thicolor;
   text-align: center;
   text-decoration: none;
@@ -428,63 +428,57 @@ svg {
   cursor: pointer;
 }
 
-#mtBtn:hover{
-  background-color: $fifcolor;
+.flex-projekter button:hover {
+  background-color: $fifcolor !important;
 }
 
-#mtBtnO:hover{
-  background-color: $fifcolor;
-}
-
-#mtBtnR:hover{
-  background-color: $fifcolor;
-}
-
-#mtBtnM:hover{
-  background-color: $fifcolor;
+.flex-projekter .close:hover, .close2:hover, .close3:hover, .close4:hover {
+  color: $seccolor !important;
 }
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  -webkit-animation-name: fadeIn; /* Fade in the background */
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0,0,0);
+  /* Fallback color */
+  background-color: rgba(0,0,0,0.4);
+  /* Black w/ opacity */
+  -webkit-animation-name: fadeIn;
+  /* Fade in the background */
   -webkit-animation-duration: 0.4s;
   animation-name: fadeIn;
-  animation-duration: 0.4s
+  animation-duration: 0.4s;
 }
-
 /* Modal Content */
 .modal-content {
   position: fixed;
-  margin-top: 10.5%;
-  margin-left: 10.5%;
+  margin-top: 5.5%;
+  margin-left: 11.5%;
   border-radius: 10px;
   background-color: $thicolor;
   width: 80%;
-  -webkit-animation-name: slideIn;
-  -webkit-animation-duration: 0.4s;
-  animation-name: slideIn;
-  animation-duration: 0.4s;
-
 }
 
-.modal-header{
+.modal-header {
   border-radius: 10px 10px 0 0;
 }
 
-.modal-body a{
+.modal-body a {
   color: #000000;
 }
-
 /* The Close Button */
 .close {
   color: #000000;
@@ -493,13 +487,12 @@ svg {
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.close:focus,
+.close:hover {
   color: #000;
   text-decoration: none;
   cursor: pointer;
 }
-
 /* The Close Button */
 .close2 {
   color: #000000;
@@ -508,26 +501,24 @@ svg {
   font-weight: bold;
 }
 
-.close2:hover,
-.close2:focus {
+.close2:focus,
+.close2:hover {
   color: #000;
   text-decoration: none;
   cursor: pointer;
 }
 
-.baagoe{
+.baagoe {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.baagoe img{
+.baagoe img {
   width: 25%;
   height: 15%;
   margin-left: 2vw;
 }
-
-
 /* The Close Button */
 .close3 {
   color: #000000;
@@ -536,24 +527,33 @@ svg {
   font-weight: bold;
 }
 
-.close3:hover,
-.close3:focus {
+.close3:focus,
+.close3:hover {
   color: #000;
   text-decoration: none;
   cursor: pointer;
 }
 
-.OdenGlas-img{
+.OdenGlas-img {
   display: flex;
   flex-direction: row;
   justify-content: center;
-
 }
 
-.OdenGlas-img img{
+.OdenGlas-img img {
   width: 25%;
   height: 15%;
   margin-left: 2vw;
+}
+
+.glas-video{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.glas-video video{
+  width: 25%;
 }
 
 /* The Close Button */
@@ -564,23 +564,45 @@ svg {
   font-weight: bold;
 }
 
-.close4:hover,
-.close4:focus {
+.close4:focus,
+.close4:hover {
   color: #000;
   text-decoration: none;
   cursor: pointer;
 }
 
-.Robot-img{
+.Robot-img {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.Robot-img img{
-  width: 25%;
+.Robot-img img {
+  width: 35%;
   height: 15%;
   margin-left: 2vw;
+}
+
+.Matas-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.Matas-img img {
+  width: 9%;
+  height: 15%;
+  margin-left: 2vw;
+}
+
+.matas-video {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.matas-video video {
+  width: 25%;
 }
 
 .modal-header {
@@ -589,35 +611,33 @@ svg {
   color: #000000;
 }
 
-.modal-body {padding: 2px 16px;}
+.modal-body {
+  padding: 2px 16px;
+}
 
 .modal-footer {
   padding: 2px 16px;
   background-color: $thicolor;
   color: #000000;
 }
-
-/* Add Animation */
-/*@-webkit-keyframes slideIn {
-  from {bottom: -300px; opacity: 0}
-  to {bottom: 0; opacity: 1}
-}
-
-@keyframes slideIn {
-  from {bottom: -300px; opacity: 0}
-  to {bottom: 0; opacity: 1}
-}*/
-
 @-webkit-keyframes fadeIn {
-  from {opacity: 0}
-  to {opacity: 1}
-}
+  from {
+    opacity: 0;
+  }
 
+  to {
+    opacity: 1;
+  }
+}
 @keyframes fadeIn {
-  from {opacity: 0}
-  to {opacity: 1}
-}
+  from {
+    opacity: 0;
+  }
 
+  to {
+    opacity: 1;
+  }
+}
 /* Andre i kontakt */
 #kontakt {
   background: #565a97;
@@ -710,7 +730,7 @@ svg {
   list-style: none;
 }
 
-.menuer a:hover{
+.menuer a:hover {
   color: $thicolor;
 }
 
@@ -720,7 +740,7 @@ svg {
   list-style: none;
 }
 
-.footer-projekter a:hover{
+.footer-projekter a:hover {
   color: $thicolor;
 }
 
@@ -729,11 +749,11 @@ svg {
   color: #fff;
 }
 
-.mail:hover{
+.mail:hover {
   color: $thicolor;
 }
 
-.some{
+.some {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -741,11 +761,11 @@ svg {
   margin-top: 5vh;
 }
 
-.some img{
+.some img {
   width: 50%;
 }
 
-.some a{
+.some a {
   display: block;
 }
 
@@ -753,7 +773,7 @@ svg {
   filter: opacity(50%);
 }
 
-.some2{
+.some2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -761,11 +781,11 @@ svg {
   margin-top: 2vh;
 }
 
-.some2 img{
+.some2 img {
   width: 30%;
 }
 
-.some2 a{
+.some2 a {
   display: block;
 }
 

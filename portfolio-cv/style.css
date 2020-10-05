@@ -343,7 +343,7 @@ svg {
 
 /* Ændre i projekter */
 #projekt {
-  background-color: #ff7f5c;
+  background: #ff7f5c;
   position: relative;
   height: 682px; }
 
@@ -353,7 +353,10 @@ svg {
   justify-content: space-between;
   margin-top: 25vh; }
 
-#myBtn, #myBtnO, #myBtnR, #myBtnM {
+#myBtn,
+#myBtnM,
+#myBtnO,
+#myBtnR {
   background-color: #ffd491;
   text-align: center;
   text-decoration: none;
@@ -373,17 +376,11 @@ svg {
   outline: 0;
   cursor: pointer; }
 
-#mtBtn:hover {
-  background-color: #72cec1; }
+.flex-projekter button:hover {
+  background-color: #72cec1 !important; }
 
-#mtBtnO:hover {
-  background-color: #72cec1; }
-
-#mtBtnR:hover {
-  background-color: #72cec1; }
-
-#mtBtnM:hover {
-  background-color: #72cec1; }
+.flex-projekter .close:hover, .close2:hover, .close3:hover, .close4:hover {
+  color: #ff7f5c !important; }
 
 /* The Modal (background) */
 .modal {
@@ -414,15 +411,11 @@ svg {
 /* Modal Content */
 .modal-content {
   position: fixed;
-  margin-top: 10.5%;
-  margin-left: 10.5%;
+  margin-top: 5.5%;
+  margin-left: 11.5%;
   border-radius: 10px;
   background-color: #ffd491;
-  width: 80%;
-  -webkit-animation-name: slideIn;
-  -webkit-animation-duration: 0.4s;
-  animation-name: slideIn;
-  animation-duration: 0.4s; }
+  width: 80%; }
 
 .modal-header {
   border-radius: 10px 10px 0 0; }
@@ -437,8 +430,8 @@ svg {
   font-size: 28px;
   font-weight: bold; }
 
-.close:hover,
-.close:focus {
+.close:focus,
+.close:hover {
   color: #000;
   text-decoration: none;
   cursor: pointer; }
@@ -450,8 +443,8 @@ svg {
   font-size: 28px;
   font-weight: bold; }
 
-.close2:hover,
-.close2:focus {
+.close2:focus,
+.close2:hover {
   color: #000;
   text-decoration: none;
   cursor: pointer; }
@@ -473,8 +466,8 @@ svg {
   font-size: 28px;
   font-weight: bold; }
 
-.close3:hover,
-.close3:focus {
+.close3:focus,
+.close3:hover {
   color: #000;
   text-decoration: none;
   cursor: pointer; }
@@ -489,6 +482,14 @@ svg {
   height: 15%;
   margin-left: 2vw; }
 
+.glas-video {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.glas-video video {
+  width: 25%; }
+
 /* The Close Button */
 .close4 {
   color: #000000;
@@ -496,8 +497,8 @@ svg {
   font-size: 28px;
   font-weight: bold; }
 
-.close4:hover,
-.close4:focus {
+.close4:focus,
+.close4:hover {
   color: #000;
   text-decoration: none;
   cursor: pointer; }
@@ -508,9 +509,27 @@ svg {
   justify-content: center; }
 
 .Robot-img img {
-  width: 25%;
+  width: 35%;
   height: 15%;
   margin-left: 2vw; }
+
+.Matas-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.Matas-img img {
+  width: 9%;
+  height: 15%;
+  margin-left: 2vw; }
+
+.matas-video {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.matas-video video {
+  width: 25%; }
 
 .modal-header {
   padding: 2px 16px;
@@ -525,16 +544,6 @@ svg {
   background-color: #ffd491;
   color: #000000; }
 
-/* Add Animation */
-/*@-webkit-keyframes slideIn {
-  from {bottom: -300px; opacity: 0}
-  to {bottom: 0; opacity: 1}
-}
-
-@keyframes slideIn {
-  from {bottom: -300px; opacity: 0}
-  to {bottom: 0; opacity: 1}
-}*/
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0; }
