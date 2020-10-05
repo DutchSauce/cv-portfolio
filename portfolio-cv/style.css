@@ -427,6 +427,9 @@ svg {
 .modal-header {
   border-radius: 10px 10px 0 0; }
 
+.modal-body a {
+  color: #000000; }
+
 /* The Close Button */
 .close {
   color: #000000;
@@ -453,6 +456,16 @@ svg {
   text-decoration: none;
   cursor: pointer; }
 
+.baagoe {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.baagoe img {
+  width: 25%;
+  height: 15%;
+  margin-left: 2vw; }
+
 /* The Close Button */
 .close3 {
   color: #000000;
@@ -466,6 +479,16 @@ svg {
   text-decoration: none;
   cursor: pointer; }
 
+.OdenGlas-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.OdenGlas-img img {
+  width: 25%;
+  height: 15%;
+  margin-left: 2vw; }
+
 /* The Close Button */
 .close4 {
   color: #000000;
@@ -478,6 +501,16 @@ svg {
   color: #000;
   text-decoration: none;
   cursor: pointer; }
+
+.Robot-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.Robot-img img {
+  width: 25%;
+  height: 15%;
+  margin-left: 2vw; }
 
 .modal-header {
   padding: 2px 16px;
