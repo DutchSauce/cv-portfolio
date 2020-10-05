@@ -421,6 +421,45 @@ svg {
   text-decoration: none;
   cursor: pointer; }
 
+/* The Close Button */
+.close2 {
+  color: #000000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold; }
+
+.close2:hover,
+.close2:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer; }
+
+/* The Close Button */
+.close3 {
+  color: #000000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold; }
+
+.close3:hover,
+.close3:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer; }
+
+/* The Close Button */
+.close4 {
+  color: #000000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold; }
+
+.close4:hover,
+.close4:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer; }
+
 .modal-header {
   padding: 2px 16px;
   background-color: #ffd491;
