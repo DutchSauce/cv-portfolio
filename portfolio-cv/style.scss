@@ -400,7 +400,14 @@ svg {
   height: 682px;
 }
 
-#myBtn{
+.flex-projekter{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 25vh;
+}
+
+#myBtn, #myBtnO, #myBtnR, #myBtnM{
   background-color: $thicolor;
   text-align: center;
   text-decoration: none;
@@ -422,6 +429,18 @@ svg {
 }
 
 #mtBtn:hover{
+  background-color: $fifcolor;
+}
+
+#mtBtnO:hover{
+  background-color: $fifcolor;
+}
+
+#mtBtnR:hover{
+  background-color: $fifcolor;
+}
+
+#mtBtnM:hover{
   background-color: $fifcolor;
 }
 
@@ -448,6 +467,7 @@ svg {
   position: fixed;
   margin-top: 10.5%;
   margin-left: 10.5%;
+  border-radius: 10px;
   background-color: $thicolor;
   width: 80%;
   -webkit-animation-name: slideIn;
@@ -455,6 +475,10 @@ svg {
   animation-name: slideIn;
   animation-duration: 0.4s;
 
+}
+
+.modal-header{
+  border-radius: 10px 10px 0 0;
 }
 
 /* The Close Button */

@@ -58,7 +58,7 @@ span1.onclick = function() {
   modal1.style.display = "none";
 }
 
-//Robot-Nordic
+//Matas
 // Get the modal for
 var modal2 = document.getElementById("myModal4");
 
@@ -83,13 +83,13 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   };
-  if (event.target == modal0) {
-    modal0.style.display = "none";
+  if (event.target == modalO) {
+    modalO.style.display = "none";
   };
-  if (event.target == modal0) {
+  if (event.target == modal1) {
     modal1.style.display = "none";
   };
-  if (event.target == modal0) {
+  if (event.target == modal2) {
     modal2.style.display = "none";
   };
 }

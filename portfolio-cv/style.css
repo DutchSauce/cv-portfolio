@@ -347,7 +347,13 @@ svg {
   position: relative;
   height: 682px; }
 
-#myBtn {
+.flex-projekter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 25vh; }
+
+#myBtn, #myBtnO, #myBtnR, #myBtnM {
   background-color: #ffd491;
   text-align: center;
   text-decoration: none;
@@ -368,6 +374,15 @@ svg {
   cursor: pointer; }
 
 #mtBtn:hover {
+  background-color: #72cec1; }
+
+#mtBtnO:hover {
+  background-color: #72cec1; }
+
+#mtBtnR:hover {
+  background-color: #72cec1; }
+
+#mtBtnM:hover {
   background-color: #72cec1; }
 
 /* The Modal (background) */
@@ -401,12 +416,16 @@ svg {
   position: fixed;
   margin-top: 10.5%;
   margin-left: 10.5%;
+  border-radius: 10px;
   background-color: #ffd491;
   width: 80%;
   -webkit-animation-name: slideIn;
   -webkit-animation-duration: 0.4s;
   animation-name: slideIn;
   animation-duration: 0.4s; }
+
+.modal-header {
+  border-radius: 10px 10px 0 0; }
 
 /* The Close Button */
 .close {
