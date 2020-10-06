@@ -159,6 +159,7 @@ section {
 }
 
 h2 {
+  font-size: 36px;
   color: #fff;
   text-align: center;
   margin-top: 50px;
@@ -404,10 +405,87 @@ svg {
   margin-top: 25vh;
 }
 
-#myBtn,
-#myBtnM,
-#myBtnO,
-#myBtnR {
+
+#myBtn{
+  background-image: url(img/baagoe-logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: $thicolor;
+  text-align: center;
+  text-decoration: none;
+  width: 20%;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 100px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 10px;
+  display: flex;
+  white-space: normal;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+#myBtnM{
+  background-image: url(img/matas-logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: $thicolor;
+  text-align: center;
+  text-decoration: none;
+  width: 20%;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 100px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 10px;
+  display: flex;
+  white-space: normal;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+#myBtnO{
+  background-image: url(img/odenseglas-logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: $thicolor;
+  text-align: center;
+  text-decoration: none;
+  width: 20%;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 100px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 10px;
+  display: flex;
+  white-space: normal;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+#myBtnR{
+  background-image: url(img/rn-logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
   background-color: $thicolor;
   text-align: center;
   text-decoration: none;
@@ -590,7 +668,7 @@ svg {
 }
 
 .Matas-img img {
-  width: 9%;
+  width: 10%;
   height: 15%;
   margin-left: 2vw;
 }
